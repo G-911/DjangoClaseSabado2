@@ -4,7 +4,7 @@
 {% block content %}
     {% for publicaciones in post_list %}
         <p>{{ publicaciones.autor }}</p>
-        <p>{{ publicaciones.titulo }}</p>
+        <a href="{% url 'detalle' %}"><p>{{ publicaciones.titulo }}</p></a>
         <br>
     {% endfor %}
 {% endblock content %}
