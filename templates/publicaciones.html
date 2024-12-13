@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+    {% for publicaciones in post_list %}
+        <p>{{ publicaciones.autor }}</p>
+        <p>{{ publicaciones.titulo }}</p>
+        <br>
+    {% endfor %}
+{% endblock content %}
